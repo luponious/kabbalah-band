@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p.foo {
+    font-family: 'Karla', sans-serif;
+    font-size: 18;
+    font-weight: 300;
+}
+
+/*@font-face {
+    font-family: "roboto_regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}*/
+html {
+    background-color: #a687de;
+}
+
+body {
+    width: auto;
+    margin: 0 auto;
+    background-color: #f59919fa;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #9846be;
+    text-shadow: 3px 3px 2px black;
+}
+
+.div_galery{
+    background-color: black;
+    border: solid 3px violet;
+    padding: 5px;
+    display: inline-block;
+}
+
+.img_galery {
+    display: inline-block;
+    block-size: 300px;
+    writing-mode: sideways-rl;
+    border: #000;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.lt_t_aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgb(197, 194, 194);
+}
+
+.lt_white_text{
+    color: white;
+}
+
+.lt_letras_xxl {
+    font-size: 12rem;
+}
+
+.lt_letras_l {
+    font-size: 2rem;
+}
+
+.lt_letras_rel {
+    font-size: 100%;
+}
+
+.lt_b {
+    font-weight: bold;
+}
+
+.batata{
+    background-image: ;
+}
+
+.lt_tx_center {
+    text-align: center;
+}
+
+.lt_tx_right {
+    text-align: right;
+}
+
+.lt_nav_ul {
+    list-style: none;
+}
+
+.lt_bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.lt_bar_item {
+    text-decoration: none;
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.lt_black,
+.lt_hover_black:hover {
+    color: #fff;
+    background-color: #000
+}
+
+.lt_top {
+    top: 0
+}
+
+.lt_bottom {
+    bottom: 0
+}
+
+.lt_button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.lt_button:hover {
+    color: #000;
+    background-color: #ccc
+}

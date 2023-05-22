@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--html_configs-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabbalah | Galeria</title>
+    <link rel="shortcut icon" href="../img/kabbalah.png" type="img/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!--contenido empieza aca-->
+
+<body>
+    <!-- navBar (siempre on Top) -->
+    <header id="inicio_index">
+        <nav class="lt_top lt_bar lt_black">
+            <ul class="lt_nav_ul">
+                <li> <a href="../index.html" class="lt_bar_item lt_button">Inicio</a>
+                </li>
+                <li> <a href="../pages/sobre.html" class="lt_bar_item lt_button">Sobre</a>
+                </li>
+                <li> <a href="../pages/galeria.html" class="lt_bar_item lt_button">Galeria</a>
+                </li>
+                <li> <a href="../pages/contato.html" class="lt_bar_item lt_button">Contato</a>
+                </li>
+                <li> <a href="../pages/calendario.html" class="lt_bar_item lt_button">Calendario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form>
+            <fieldset>
+                <legend>Tus datos para contacto:</legend>
+                <!--NOMBRE-->
+                <div><label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Bananovisk Bananum" required />
+                </div>
+                <!--EMAIL-->
+                <div><label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="banana@email.com" required />
+                </div>
+
+
+                <div>
+                    <label>Como nos conociste?</label>
+                    <select name="encuesta">
+                        <option value="virtual_ad">Publicidad</option>
+                        <option value="carteles">Carteles</option>
+                        <option value="friend">Un amigo o conocido</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <!--SEXO-->
+                <div>
+                    <label for="id_masc">Masculino</label>
+                    <input type="radio" name="sexo" id="id_masc" value="">
+                    <label for="id_fem">Femenino</label>
+                    <input type="radio" name="sexo" id="id_fem" value="">
+                    <label for="id_otro">Otro</label>
+                    <input type="radio" name="sexo" id="id_otro" value="">
+                </div>
+                <div>
+                    <input type="checkbox" name="terminos_y_condiciones" id="t_y_c">
+                    <label for="t_y_c">Quiero recibir noticias sobre la banda.</label>
+                </div>
+                <div>
+                    <legend>Tu mensaje:</legend>
+                    <textarea name="comment_box" id="" cols="30" rows="10"
+                        placeholder="Me gustaria contratar..."></textarea>
+                </div>
+
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear Form">
+        </form>
+
+        <!--TABLE (kinda no bueno)-->
+        <table border="2px" cellpadding="5px" cellspacing="5px">
+            <thead>
+                <tr>
+                    <th>Origin</th>
+                    <th>Genres</th>
+                    <th>Years active</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>London, England</td>
+                    <td>Hard rock, blues, folk</td>
+                    <td>1968 - 1980</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--TABLE END-->
+    </main>
+</body>
+<footer class="lt_bar lt_black">
+    <div>
+        <a class="lt_bar_item lt_button" href="https://balsamiq.cloud/slcr2x4/pd6z121" target="_blank"
+            rel="noopener noreferrer">Ir al
+            wireframe!</a>
+        <a class="lt_bar_item lt_button" href="#inicio_index">Volver al inicio.</a>
+        <p class="lt_tx_center">Copyright by Luigi Thelonious</p>
+    </div>
+</footer>
+</body>
+<!--fin de contenido-->
+
+</html>
