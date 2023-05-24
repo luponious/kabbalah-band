@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 p.foo {
@@ -10,21 +9,148 @@ p.foo {
     font-weight: 300;
 }
 
-/*@font-face {
-    font-family: "roboto_regular";
-    src: url(../fonts/Roboto-Regular.ttf);
-}*/
-html {
-    background-color: #a687de;
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: #bbb;
 }
 
-body {
-    width: auto;
-    margin: 0 auto;
-    background-color: #f59919fa;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
+a {
+    color: #ffffff;
 }
+/*hamburguer menu*/
+/* header */
+
+.header {
+    background-color: #000000;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #d0c9c9;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #dfdfdf;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+/*btn animacion*/
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+/*-----fin del hamburguer--*/
+
+
+/* 48em = 768px @ 16pt font */
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+.just_center{justify-content: center;}
 
 h1 {
     margin: 0;
@@ -33,7 +159,7 @@ h1 {
     text-shadow: 3px 3px 2px black;
 }
 
-.div_galery{
+.div_galery {
     background-color: black;
     border: solid 3px violet;
     padding: 5px;
@@ -58,7 +184,7 @@ h1 {
     background-color: rgb(197, 194, 194);
 }
 
-.lt_white_text{
+.lt_wt_text {
     color: white;
 }
 
@@ -78,7 +204,7 @@ h1 {
     font-weight: bold;
 }
 
-.batata{
+.batata {
     background-image: ;
 }
 
@@ -90,37 +216,16 @@ h1 {
     text-align: right;
 }
 
-.lt_nav_ul {
-    list-style: none;
-}
-
-.lt_bar {
-    width: 100%;
-    overflow: hidden
-}
-
-.lt_bar_item {
-    text-decoration: none;
-    padding: 8px 16px;
-    float: left;
-    width: auto;
-    border: none;
-    display: block;
-    outline: 0
-}
-
-.lt_black,
-.lt_hover_black:hover {
-    color: #fff;
-    background-color: #000
-}
-
 .lt_top {
     top: 0
 }
 
 .lt_bottom {
     bottom: 0
+}
+
+footer {
+    background-color: #000;
 }
 
 .lt_button {
