@@ -1,0 +1,28 @@
+$paleta_de_color:(
+    branco: #ffffff,
+    branco-e: #fff5b8,
+    preto: #000000,
+    verde-e: #428e4a,
+    roxo-e: #480496,
+    roxo-ee: #241831be,
+    blue-e: #1a0052,
+    blue-ee: #010045,
+    amarelo-e: #c9fa05,
+    neon-yellow: #cae42a,
+    neon-pink: #d000ff,
+    neon-verd: #4be79f,
+);
+
+$gradient_color:(
+    radial_verde: radial-gradient(circle, rgba(66, 142, 74, 0.9551470246) 18%, rgb(13, 1, 45) 100%),
+    linear_roxo: linear-gradient(rgba(36, 24, 49, 0.7450980392), #1a0052),
+    linear_azul: linear-gradient(to bottom, #010045 5%, #000000 100%),
+    linear_preto: linear-gradient(to bottom, #000000 5%, #010045 100%),
+);
+
+$shadow_color:(
+    neon-pink: -2px 4px 4px #d000ff,
+    neon-yellow: 0px 4px 16px 0 #cae42a,
+    preto: 1px 1px 4px 0 rgb(0, 0, 0),
+    roxo: 0px 1px 0px 0px #3f0585,  
+)
